@@ -7,6 +7,7 @@ using Xunit;
 namespace CommonToolLibrary.XUnitTest.Converter
 {
     using CommonToolLibrary.Common.EnumLibrary;
+    using CommonToolLibrary.Common.Model;
 
     public class StringConvertTest
     {
