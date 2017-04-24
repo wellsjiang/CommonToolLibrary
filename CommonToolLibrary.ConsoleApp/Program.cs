@@ -3,17 +3,13 @@
 namespace CommonToolLibrary.ConsoleApp
 {
     using System.Threading.Tasks;
-
-    using CommonToolLibrary.Common.Model;
     using CommonToolLibrary.Extension.Converter;
-    using CommonToolLibrary.Extension.Log;
 
     class Program
     {
         static void Main(string[] args)
         {
             //AsyncMethod();
-            LogService.Instance.Log(new LogRecordEntity(),true);
             Console.WriteLine("Hello World!".ToBase64());
             Console.ReadKey();
         }
