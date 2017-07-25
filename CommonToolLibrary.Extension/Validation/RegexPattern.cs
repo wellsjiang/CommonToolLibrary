@@ -32,5 +32,13 @@ namespace CommonToolLibrary.Extension.Validation
         /// 所有整数或小数
         /// </summary>
         public static readonly Regex IntegerOrDecimal = new Regex("^(0|[+|-]?[0][.][0-9]*[1-9]+[0-9]*|[0]+[.][0]+|[+|-]?[0-9]*[1-9][0-9]*|[+|-]?[0-9]*[1-9][0-9]*[.][0-9]+)$");
+        /// <summary>
+        /// IP格式校验
+        /// </summary>
+        public static readonly Regex IP=new Regex(@"^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$");
+        /// <summary>
+        /// 局域网IP格式校验
+        /// </summary>
+        public static readonly Regex LanIp=new Regex(@"^((192\.168|172\.([1][6-9]|[2]\d|3[01]))(\.([2][0-4]\d|[2][5][0-5]|[01]?\d?\d)){2}|10(\.([2][0-4]\d|[2][5][0-5]|[01]?\d?\d)){3})$");
     }
 }
