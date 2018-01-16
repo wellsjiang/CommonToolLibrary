@@ -88,5 +88,19 @@ namespace CommonToolLibrary.Extension.CollectionPlus
             }
             return result;
         }
+        
+        /// <summary>
+        /// 对 <see cref="T:System.Collections.Generic.List`1" /> 的每个元素执行指定操作。
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="action"></param>
+        public static void Foreach<TSource>(this IEnumerable<TSource> source, Action<TSource, int> action)
+        {
+            TSource[] array = source.ToArray();
+            for (int i = 0; i < array.Length; i++)
+            {
+                action(array[i], i);
+            }
+        }
     }
 }

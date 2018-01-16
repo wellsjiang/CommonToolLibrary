@@ -54,7 +54,10 @@ namespace CommonToolLibrary.XUnitTest.CollectionPlus
             {
                 {0, "减"},{ 1,"加"},{ 2,"无"},{ 3,"除"}
             }, EnumPlus.GetValueDescription(typeof(MathOperationEnum),"无"));
+            var listDemo=new List<string>{"1","2","4","5"};
+            listDemo.Foreach((x,index)=>{
 
+            });
         }
     }
 }
